@@ -1,12 +1,16 @@
-import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import HomePageMain from "../pages/HomePage/HomePageMain";
+import BlogPage from "../pages/blogpage/BlogPage";
 
 
 const router = createBrowserRouter([
     {
-        path: "*",
-        element: <HomePageMain/>
+        path: "/",
+        element: <HomePageMain />,
+    },
+    {
+        path: "/blog",
+        element: <BlogPage />,
     }
 ]);
     
