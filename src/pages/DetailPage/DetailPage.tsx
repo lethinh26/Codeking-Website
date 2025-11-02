@@ -1,55 +1,6 @@
 export default function DetailPage() {
   return (
     <div className="min-h-screen bg-gray-100 font-['Inter',sans-serif]">
-
-      {/* Header Navigation */}
-      <header className="bg-linear-to-r from-[#2b001b] via-[#4b0030] to-[#9e2266] text-white max-w-[1440px] mx-auto h-[90px]">
-        <div className="max-w-[1440px] mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center space-x-3">
-
-            {/* Logo */}
-            <div className="flex items-center space-x-3">
-              <img
-                src="/src/assets/Detail/codingLogo.png"
-                alt="CODEKING Logo"
-                className="h-16 w-70 object-contain"
-              />
-            </div>
-          </div>
-
-          <nav className="flex items-center space-x-8">
-            <a
-              href="#"
-              className="text-white hover:text-pink-400 transition-colors font-[15px]"
-            >
-              Trang chủ
-            </a>
-            <a
-              href="#"
-              className="text-white hover:text-pink-400 transition-colors font-[15px]"
-            >
-              Giới thiệu
-            </a>
-            <a
-              href="#"
-              className="text-white hover:text-pink-400 transition-colors font-[15px]"
-            >
-              Tin tức & sự kiện
-            </a>
-            <a
-              href="#"
-              className="text-white hover:text-pink-400 transition-colors font-[15px]"
-            >
-              Bài viết
-            </a>
-            <button className="bg-pink-500 hover:bg-pink-600 text-black px-6 py-2 rounded-lg font-medium transition-all duration-200 hover:shadow-lg hover:cursor-pointer hover:shadow-pink-500/25 w-[140px] h-[45px]">
-              Liên hệ
-            </button>
-          </nav>
-        </div>
-      </header>
-
-      {/* Hero Section */}
       <section
         className="relative bg-cover bg-center py-20 mx-auto max-w-[1440px] h-[600px]"
         style={{ backgroundImage: "url('/src/assets/Detail/amazon.png')" }}
@@ -312,31 +263,6 @@ export default function DetailPage() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-linear-to-r from-[#2b001b] via-[#4b0030] to-[#9e2266] text-white border-t border-gray-700 max-w-[1440px] mx-auto">
-        <div className="max-w-[1440px] h-40 mx-auto px-4 py-6 text-center">
-          <div className="mb-2 text-lg font-bold">© 2025 CODEKING</div>
-          <div className="mb-2 text-2xl font-bold tracking-wide">
-            TỰ TIN – SÁNG TẠO – HỢP TÁC – THỰC TIỄN
-          </div>
-          <div className="flex justify-center items-center gap-1 text-base font-medium mt-2">
-            <span className="flex items-center gap-1">
-              <span role="img" aria-label="email">
-                📧
-              </span>
-              contact@codeking.club
-            </span>
-            <span className="mx-2">|</span>
-            <span className="flex items-center gap-1">
-              <span role="img" aria-label="website">
-                🌐
-              </span>
-              codeking.vn
-            </span>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
