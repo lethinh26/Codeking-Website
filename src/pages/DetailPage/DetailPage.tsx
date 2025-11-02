@@ -1,11 +1,12 @@
+import amazon from "../../assets/Detail/amazon.png";
 export default function DetailPage() {
   return (
-    <div className="min-h-screen bg-gray-100 font-['Inter',sans-serif]">
+    <div className="min-h-screen bg-[#d9d9d9]">
       <section
-        className="relative bg-cover bg-center py-20 mx-auto max-w-[1440px] h-[600px]"
-        style={{ backgroundImage: "url('/src/assets/Detail/amazon.png')" }}
+        className="relative bg-cover bg-center "
+        style={{ backgroundImage: `url(${amazon})` }}
       >
-        <div className="absolute inset-0 bg-black/50 rounded-b-2xl w-full h-full"></div>
+        <div className="absolute inset-0 bg-black/50 w-full h-full"></div>
         <div className="relative mx-auto px-4 text-center z-10 flex flex-col justify-center items-center h-full">
           <h1 className="text-[64px] font-bold text-white mb-4 drop-shadow-lg mt-95">
             AWS Sập DNS DynamoDB
@@ -16,11 +17,11 @@ export default function DetailPage() {
       </section>
 
       {/* Main Content */}
-      <div className="max-w-[1440px] mx-auto bg-[#d9d9d9]">
+      <div className="mx-auto bg-[#d9d9d9]">
         <div className="flex flex-col lg:flex-row">
 
           {/* Main Article */}
-          <main className="lg:w-2/3 border-l bg-[#d9d9d9]">
+          <main className="lg:w-2/3 border-l-0 bg-[#d9d9d9]">
 
             {/* Article Header */}
             <div className="border-b border-black border-r px-20 py-10">
@@ -191,9 +192,9 @@ export default function DetailPage() {
       </div>
 
       {/* Related Articles Section */}
-      <section className="bg-[#d9d9d9] py-12 max-w-[1440px] mx-auto border-r border-l border-black">
-        <div className="max-w-[1440px] mx-auto px-12 py-30">
-          <h2 className="text-[40px] font-bold text-left text-pink-600 mb-10 tracking-tight pb-8">
+      <section className="bg-[#d9d9d9] py-12 mx-auto">
+        <div className="max-w-[1440px] mx-auto px-12">
+          <h2 className="text-[40px] font-bold text-left text-pink-600 tracking-tight pb-4">
             BÀI VIẾT TƯƠNG TỰ
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -252,7 +253,7 @@ export default function DetailPage() {
                   <div className="flex justify-between items-end mt-auto pt-2">
                     <span className="text-[12px] text-black-500 font-bold">{item.date}</span>
                     <button
-                      className={`px-6 py-2 rounded-full font-semibold font-[roboto] text-sm transition-all duration-200 shadow-sm ${item.btnColor} hover:scale-105 hover:cursor-pointer`}
+                      className={`px-6 py-2 rounded-full font-semibold text-sm transition-all duration-200 shadow-sm ${item.btnColor} hover:scale-105 hover:cursor-pointer`}
                     >
                       XEM THÊM
                     </button>
