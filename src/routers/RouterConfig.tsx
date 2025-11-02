@@ -4,6 +4,7 @@ import HomePageMain from "../pages/HomePage/HomePageMain";
 import BlogPage from "../pages/blogpage/BlogPage";
 import NewsEventPage from "../pages/NewsEventPage/NewsEventPage";
 
+import DetailPage from "../pages/DetailPage/DetailPage";
 
 const router = createBrowserRouter([
     {
