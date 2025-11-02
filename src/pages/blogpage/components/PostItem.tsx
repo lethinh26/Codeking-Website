@@ -7,16 +7,16 @@ interface PostItemProps {
 
 export default function PostItem({ image, title, description, date }: PostItemProps) {
     return (
-        <div className="py-12 border-b-2 border-[#333333] flex justify-center">
-            <div className="w-full pl-14 pr-10 flex">
-                <img src={image} alt={title} className="object-cover rounded-[10px]" />
-                <div className="py-6 px-10">
-                    <p className="font-medium text-[#333333] mb-2">{date}</p>
-                    <h3 className="text-[24px] font-semibold">{title}</h3>
-                    <div className="mt-4 text-[#333333]">
-                        <p>{description}</p>
-                        <div className="flex justify-end mt-8">
-                            <button className="w-42 h-10 border-black-500 border rounded-3xl end hover:bg-[#380320] hover:text-white">
+        <div className="py-8 border-b-2 border-[#333333]">
+            <div className="w-full flex flex-col md:flex-row gap-6">
+                <img src={image} alt={title} className="object-cover rounded-xl w-full md:w-80 h-48" />
+                <div className="flex-1">
+                    <p className="text-xs font-medium text-[#333333] mb-2">{date}</p>
+                    <h3 className="text-lg md:text-xl font-semibold">{title}</h3>
+                    <div className="mt-3 text-[#333333]">
+                        <p className="text-sm md:text-base">{description}</p>
+                        <div className="flex justify-end mt-6">
+                            <button className="px-6 h-9 text-sm border-black-500 border rounded-full hover:bg-[#380320] hover:text-white">
                                 Xem Thêm
                             </button>
                         </div>

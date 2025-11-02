@@ -25,29 +25,27 @@ export default function StatsSection() {
     ];
 
     return (
-        <section className="bg-[#F0DFDB] min-h-screen flex items-center justify-center px-12 py-20">
-            <div className="container mx-auto">
-                <h2 className="text-6xl md:text-7xl font-bold text-[#E91E63] text-center mb-20">
+        <section className="bg-[#F0DFDB] min-h-screen flex items-center justify-center px-6 py-16">
+            <div className="container mx-auto max-w-7xl">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#E91E63] text-center mb-12">
                     THÀNH TỰU
                 </h2>
                 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {stats.map((stat, index) => (
                         <Card
                             key={index}
-                            className="text-center border-0 shadow-lg rounded-3xl overflow-hidden"
+                            className="text-center shadow-lg rounded-2xl overflow-hidden border-0!"
                             style={{ 
                                 backgroundColor: stat.color,
                             }}
-                            bodyStyle={{ 
-                                padding: '64px 32px',
-                            }}
+
                         >
                             <div className="text-white">
-                                <h3 className="text-7xl font-bold mb-6">
+                                <h3 className="text-5xl font-bold mb-4">
                                     {stat.number}
                                 </h3>
-                                <p className="text-3xl font-medium">
+                                <p className="text-xl font-medium">
                                     {stat.label}
                                 </p>
                             </div>

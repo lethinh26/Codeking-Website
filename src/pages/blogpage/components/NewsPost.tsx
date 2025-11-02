@@ -5,8 +5,8 @@ import secondBlog from '../../../assets/blog/secondBlog.png';
 
 export default function NewsPost() {
     return (
-        <div className="px-16 pt-16 flex flex-col gap-10">
-            <h2 className="text-[40px] font-extrabold text-[#E91E63]">CÁC BÀI VIẾT MỚI NHẤT</h2>
+        <div className="px-6 md:px-12 pt-12 flex flex-col gap-8 max-w-7xl mx-auto">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#E91E63]">CÁC BÀI VIẾT MỚI NHẤT</h2>
             
             <MainCard
                 image={first_thirt}
@@ -17,7 +17,7 @@ export default function NewsPost() {
                 author="Lê Phú Thịnh"
             />
 
-            <div className='grid grid-cols-3 gap-8'>
+            <div className='grid md:grid-cols-3 gap-6'>
                 <BlogCard
                     image={secondBlog}
                     title="Workshop Ứng Dụng AI Vào Học Tập"

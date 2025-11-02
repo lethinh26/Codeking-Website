@@ -4,23 +4,23 @@ import first_thirt from '../../../assets/blog/first_thirt.png';
 
 export default function AllPost() {
     return (
-        <div className='w-full mt-30'>
-            <h2 className='pl-16 font-extrabold text-[40px] text-[#E91E63] border-b-2 border-[#333333]'>
+        <div className='w-full mt-30 max-w-7xl mx-auto px-6 md:px-12'>
+            <h2 className='font-extrabold text-2xl md:text-3xl lg:text-4xl text-[#E91E63] border-b-2 border-[#333333] pb-4'>
                 TẤT CẢ BÀI VIẾT
             </h2>
             
-            <div className='border-b-2 py-6 border-[#333333]'>
-                <div className='flex justify-center gap-6'>
-                    <button className='w-50 h-18.5 rounded-[10px] bg-[#471022] text-white font-medium hover:bg-[#CD2960]'>
+            <div className='border-b-2 py-5 border-[#333333]'>
+                <div className='flex flex-wrap justify-center gap-4'>
+                    <button className='px-6 py-2 rounded-lg bg-[#471022] text-white font-medium hover:bg-[#CD2960] text-sm'>
                         Công Nghệ
                     </button>
-                    <button className='w-50 h-18.5 rounded-[10px] bg-[#471022] text-white font-medium hover:bg-[#CD2960]'>
+                    <button className='px-6 py-2 rounded-lg bg-[#471022] text-white font-medium hover:bg-[#CD2960] text-sm'>
                         Kiến Thức
                     </button>
-                    <button className='w-50 h-18.5 rounded-[10px] bg-[#471022] text-white font-medium hover:bg-[#CD2960]'>
+                    <button className='px-6 py-2 rounded-lg bg-[#471022] text-white font-medium hover:bg-[#CD2960] text-sm'>
                         Kinh Nghiệm
                     </button>
-                    <button className='w-50 h-18.5 rounded-[10px] bg-[#471022] text-white font-medium hover:bg-[#CD2960]'>
+                    <button className='px-6 py-2 rounded-lg bg-[#471022] text-white font-medium hover:bg-[#CD2960] text-sm'>
                         Dự Án
                     </button>
                 </div>
