@@ -1,14 +1,17 @@
-import { useEffect } from 'react'
-import { useNavigate } from 'react-router'
+import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
+import AdvantagesSection from './components/AdvantagesSection';
+import CoreValuesSection from './components/CoreValuesSection';
+import StatsSection from './components/StatsSection';
 
 const HomePageMain = () => {
-  const navigate = useNavigate()
-  useEffect(() => {
-    navigate('blog')
-  }, [navigate])
   return (
     <div>
-      abc
+      <HeroSection />
+      <AboutSection />
+      <AdvantagesSection />
+      <CoreValuesSection />
+      <StatsSection />
     </div>
   )
 }
